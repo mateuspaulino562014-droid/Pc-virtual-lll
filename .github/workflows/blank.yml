@@ -1,0 +1,25 @@
+# .github/workflows/pc-virtual.yml
+name: Simulação de PC Virtual
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pc-virtual:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Iniciar simulação
+        run: |
+          echo "================================"
+          echo "      PC VIRTUAL GAMER"
+          echo "================================"
+          echo "CPU: 8 núcleos (simulação)"
+          echo "RAM: 16 GB (simulação)"
+          echo "GPU: RTX 4090 (simulação)"
+          echo "Sistema: Windows 11 (simulação)"
+          echo "Status: Inicializado"
+          echo "================================"
+          sleep 30
+          echo "Simulação encerrada."
